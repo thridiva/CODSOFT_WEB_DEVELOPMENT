@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PORTFOLIO</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("background_image.jpg") fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        animation: blink 4s ease-in-out infinite alternate;
+      }
+      @keyframes blink {
+        from,
+        to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 20px #555;
+        animation: fadeIn 1s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      h1 {
+        font-size: 4rem;
+        color: #333;
+        margin-bottom: 0;
+        text-shadow: 2px 2px 0 #fff, 4px 4px 0 #555;
+        animation: text-shadow 2s ease-in-out infinite alternate;
+        padding-bottom: 5px;
+      }
+      @keyframes text-shadow {
+        from {
+          text-shadow: 2px 2px 0 #fff, 4px 4px 0 #555;
+        }
+        to {
+          text-shadow: 4px 4px 0 #fff, 8px 8px 0 #555;
+        }
+      }
+      nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        padding-top: 20px;
+        transition: background-color 0.5s ease-in-out;
+      }
+      nav:hover {
+        background-color: #555;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.3s ease-in-out;
+      }
+      nav a:hover {
+        color: #ffcc00;
+      }
+      .p {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .skill {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid #333;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #555;
+        transition: transform 0.3s ease-in-out;
+      }
+      .skill:hover {
+        transform: scale(1.1);
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #555;
+      }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home🏘</a></li>
+        <li><a href="#">About Me✨</a></li>
+        <li><a href="#">Skills👩🏻‍💻</a></li>
+        <li><a href="#">Contact Me✉️</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>GAJJALA THRIDIVA REDDY!</h1>
+      <p>Welcome to my portfolio😊</p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const home = document.querySelector("nav ul li:nth-child(1) a");
+        const aboutMe = document.querySelector("nav ul li:nth-child(2) a");
+        const skills = document.querySelector("nav ul li:nth-child(3) a");
+        const contactMe = document.querySelector("nav ul li:nth-child(4) a");
+        const container = document.querySelector(".container");
+
+        home.addEventListener("click", () => {
+          container.innerHTML =
+            "<h1>GAJJALA THRIDIVA REDDY</h1><p>Welcome to my portfolio</p>";
+        });
+
+        aboutMe.addEventListener("click", () => {
+          container.innerHTML =
+            "<h1>About Me</h1><p>Hello 🙋🏻‍♀️,Myself Gajjala Thridiva Reddy pursuing BTECH at Vellore Institute of Technology in computer science. I am more interested in web development and coding as a BTech student. A passionate individual with a strong interest in the fields of Artificial Intelligence AI, Machine Learning ML, and Web Development. I'm excited to introduce myself and share my experiences and aspirations with you.</p>";
+        });
+
+        skills.addEventListener("click", () => {
+          container.innerHTML =
+            "<h1>MY SKILLS</h1><div class='skills-container'><div class='skill'>HTML</div><div class='skill'>CSS</div><div class='skill'>JAVASCRIPT</div><div class='skill'>BOOTSTRAP</div><div class='skill'>React</div><div class='skill'>AI and ML</div></div>";
+        });
+
+        contactMe.addEventListener("click", () => {
+          container.innerHTML =
+            "<h1>Contact Me</h1><ul><li><a href='https://www.linkedin.com/in/thridiva/' target='_blank'>LinkedIn</a></li><li><a href='https://github.com/thridiva' target='_blank'>GitHub</a></li></ul><p>Phone&#128222;: 8498837445</p><p>Email&#128231;: thridivareddygajjala@gmail.com</p>";
+        });
+      });
+    </script>
+    <footer>
+      <p>&copy; 2023 GTR💖. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
