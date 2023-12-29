@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      h1 {
+        font-size: 4rem;
+        color: #333;
+        margin-bottom: 0;
+        text-shadow: 2px 2px 0 #fff, 4px 4px 0 black;
+        padding-top: 250px;
+      }
+      p {
+        font-size: 1.5rem;
+        color: black;
+        margin-top: 0;
+      }
+      @keyframes text-shadow {
+        from {
+          text-shadow: 2px 2px 0 #fff, 4px 4px 0 black;
+        }
+        to {
+          text-shadow: 4px 4px 0 #fff, 8px 8px 0 black;
+        }
+      }
+      nav {
+        background-color: darkolivegreen;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      footer {
+        background-color: darkolivegreen;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      footer p {
+        margin: 2px;
+        font-size: 0.8rem;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Still More</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Welcome to our landing page!</h1>
+      <p>
+        Here you will find all the information you need about our products and
+        services.
+      </p>
+      <section id="about">
+        <h2>About Us</h2>
+
+        We are a company that specializes in providing high-quality services to
+        our clients. Our team of experts is dedicated to helping you achieve
+        your goals and grow your business.
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>
+            Software services: These services enhance features and upgrade the
+            security for a company or individual’s technological devices, such
+            as computers and phones.
+          </li>
+          <li>
+            Training services: These services help employees develop new skills
+            and knowledge to improve their job performance.
+          </li>
+          <li>
+            Marketing services: These services help companies promote their
+            products or services to potential customers through various channels
+            such as social media, email, and search engines.
+          </li>
+        </ul>
+      </section>
+      <section id="Contact">
+        <h3><b>Contact Us</b></h3>
+        <p>
+          Feel free to reach out to us with any questions or concerns you may
+          have.
+        </p>
+        <form style="padding-bottom: 150px">
+          <label for="name">Name:</label
+          ><input type="text" id="name" name="name" /><br /><label for="email"
+            >Email:</label
+          ><input type="email" id="email" name="email" /><br /><label
+            for="message"
+            >Message:</label
+          ><textarea id="message" name="message"></textarea><br /><input
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>© 2023 GTR💖. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
